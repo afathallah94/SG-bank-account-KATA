@@ -1,0 +1,139 @@
+{
+	"info": {
+		"name": "SG-bank-account-KATA_collection",
+		"_postman_id": "5c15379d-d75b-729f-bac9-ce89562e0468",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save Account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountId\": \"ACT123\",\n\t\"client\": {\n\t\t\"clientId\" : \"CLT123\",\n\t\t\"lastName\": \"MyLastName\",\n        \"firstName\": \"MyFirstName\",\n        \"address\": \"MyAddress\",\n        \"birthDate\": \"27/04/1994\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/account/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"account",
+						"save"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api/account/ACT123/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"account",
+						"ACT123",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit Operation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api/operations/deposit/ACT123/2000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"operations",
+						"deposit",
+						"ACT123",
+						"2000"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Withdrawal Operation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api/operations/withdrawal/ACT123/500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"operations",
+						"withdrawal",
+						"ACT123",
+						"500"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "History of Operations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api/operations/history/ACT123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"operations",
+						"history",
+						"ACT123"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
