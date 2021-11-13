@@ -1,0 +1,1 @@
+# SG-bank-account-KATA
