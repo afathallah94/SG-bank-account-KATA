@@ -1,1 +1,18 @@
 # SG-bank-account-KATA
+
+### KATA-JAVA-TDD for SG
+
+## User Stories
+- US 1: In order to save money As a bank client I want to make a deposit in my account
+- US 2: In order to retrieve some or all of my savings As a bank client I want to make a withdrawal from my account
+- US 3: In order to check my operations As a bank client I want to see the history (operation, date, amount, balance) of my operations
+
+## To Build
+- Clone project `https://github.com/afathallah94/SG-bank-account-KATA.git`
+- Go to the project directory and build the project `mvn clean install`
+
+## To Run
+- Start the Project `mvn spring-boot:run`
+
+## To Test
+- Import the collection `SG-bank-account-KATA_collection.postman_collection.json` in Postman and run it.
